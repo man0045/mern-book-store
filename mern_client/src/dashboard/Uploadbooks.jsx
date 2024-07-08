@@ -36,7 +36,7 @@ const Uploadbooks = () => {
   const bookDescription = form.bookDescription.value;
   const bookPdfUrl = form.bookPdfUrl.value;
   const bookObj= {bookTitle,authorName,imageUrl,category,bookDescription,bookPdfUrl};
-  fetch("http://localhost:5000/upload-book",{
+  fetch("https://mern-book-store-1.onrender.com/upload-book",{
    method: "POST",
    headers: {
     "Content-type": "application/json",
