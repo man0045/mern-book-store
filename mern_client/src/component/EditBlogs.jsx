@@ -28,7 +28,7 @@ const EditBlogs = () => {
     const Blogs = form.Blogs.value;
     const bookObj = {Name, bookTitle, authorName, Blogs};
     // console.log(bookObj)
-    fetch(`http://localhost:5000/blog/${id}`, {
+    fetch(`https://mern-book-store-1.onrender.com/blog/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json"
