@@ -8,10 +8,10 @@ import { Link } from 'react-router-dom';
 const Blog = () => {
   const [name, setAllName] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/all-blogs").then(res => res.json()).then(data => setAllName(data));
+    fetch("https://mern-book-store-1.onrender.com/all-blogs").then(res => res.json()).then(data => setAllName(data));
   })
   const handleDelete = (id) => {
-    fetch(`http://localhost:5000/blog/${id}`, {
+    fetch(`https://mern-book-store-1.onrender.com/blog/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
