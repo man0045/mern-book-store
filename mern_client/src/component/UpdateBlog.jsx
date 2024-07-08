@@ -18,7 +18,7 @@ const UpdateBlog = () => {
   console.log(bookObj)
 
 
-  fetch("http://localhost:5000/blog", {
+  fetch("https://mern-book-store-1.onrender.com/blog", {
    method: "POST",
    headers: {
     "Content-type": "application/json",
