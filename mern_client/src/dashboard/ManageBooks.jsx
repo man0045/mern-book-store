@@ -5,11 +5,11 @@ import { Table } from 'flowbite-react';
 const ManageBooks = () => {
  const [allBooks, setallBooks] = useState([]);
  useEffect(() => {
-  fetch("http://localhost:5000/all-books").then(res => res.json()).then(data => setallBooks(data));
+  fetch("https://mern-book-store-1.onrender.com/all-books").then(res => res.json()).then(data => setallBooks(data));
  }, [])
 
  const handleDelete = (id)=>{
-  fetch(`http://localhost:5000/book/${id}`),{
+  fetch(`https://mern-book-store-1.onrender.com/book/${id}`),{
    method: "DELETE",
   }.then(res => res.json()).then(data => {
       alert("Book Deleted Successfully!")
